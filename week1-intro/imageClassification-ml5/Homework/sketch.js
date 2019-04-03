@@ -59,7 +59,7 @@ function changeBackground(keyword){
 		var rnd = Math.floor(Math.random() * data.items.length);
 
 		var image_src = data.items[rnd]['media']['m'].replace("_m", "_b");
-
+		console.log(image_src);
 		$('body').css('background-image', "url('" + image_src + "')");
 
 	});
